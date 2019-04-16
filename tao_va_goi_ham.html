@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tao-va-goi-ham</title>
+</head>
+<body>
+<script>
+    function processConfirm(answer) {
+        let result = "";
+        if (answer) {
+            result = "chuc ban lan sau lai may man";
+        } else  {
+            result = "lan sau se chuc ban may man";
+        }
+        return result;
+    }
+    let confirmAnswer = confirm("trai hay phai");
+    let theAnswer = processConfirm(confirmAnswer);
+    alert(theAnswer);
+</script>
+</body>
+</html>
